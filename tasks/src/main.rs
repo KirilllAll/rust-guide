@@ -77,7 +77,7 @@ fn q5() {
         println!("{counter}");
         counter += 1;
 
-        count += count.check_add(1).expect("Failed!")
+        count += count.checked_add(1).expect("Failed!")
         // - cпособ выхода при переполнении
     }
 }
